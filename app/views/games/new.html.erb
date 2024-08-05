@@ -1,0 +1,30 @@
+
+
+<%# <%=@letters%>
+<h1>New game</h1>
+
+<ul class="letters d-flex gap-2">
+  <% @letters.each do |letter| %>
+
+    <li><%=letter%></li>
+
+  <% end %>
+</ul>
+
+
+
+<%# ********* Welcome to the longest word-game! *********
+Here is your grid:
+Q F M R K L I T P
+*****************************************************
+What is your longest word?
+lift
+******** Now your results ********
+Your word: lift
+Time Taken to answer: 12.07916
+Your score: 3.194722666666667
+Message: Well Done! %>
+
+<%# SecureRandom.alphanumeric
+
+('a'..'z').to_a.sample %>
